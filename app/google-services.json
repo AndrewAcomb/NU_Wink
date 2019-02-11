@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "967202554290",
+    "firebase_url": "https://kevinproto-ad9e2.firebaseio.com",
+    "project_id": "kevinproto-ad9e2",
+    "storage_bucket": "kevinproto-ad9e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:967202554290:android:42cfe7799e09db25",
+        "android_client_info": {
+          "package_name": "edu.northwestern.u.andrewacomb2021.kevinproto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "967202554290-478ocgj64d8msn1t74mqqn8qnjn2ha5v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.northwestern.u.andrewacomb2021.kevinproto",
+            "certificate_hash": "1bdd4efa94ca15c90861a264ee514038dda0b8a1"
+          }
+        },
+        {
+          "client_id": "967202554290-thgl2sul197ef2eq40dsjd6clr706k2b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj_hJHnThHuDic_t0hWDgcsavKx9Fwtds"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "967202554290-utq6blrioddstonb4i77gsu8j9ubm9ga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
