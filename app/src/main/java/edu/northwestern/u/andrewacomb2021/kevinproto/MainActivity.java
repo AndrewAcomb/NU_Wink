@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         Button btnCamera = (Button)findViewById(R.id.btnCamera);
+        Button btnWarning = (Button)findViewById(R.id.btnWarning);
+
         imageView = (ImageView) findViewById(R.id.imageView);
 
         // [START string_upload_event]
@@ -51,6 +53,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnWarning.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Warning.class);
+                startActivity(intent);
+            }
+        });
 
 
     }
