@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnCamera = (Button)findViewById(R.id.btnCamera);
         Button btnWarning = (Button)findViewById(R.id.btnWarning);
+        Button btnTutorial = (Button)findViewById(R.id.btnTutorial);
+
 
         imageView = (ImageView) findViewById(R.id.imageView);
 
@@ -48,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
         btnCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(intent, 0);
+                Intent intent = new Intent(MainActivity.this, Preview.class);
+                startActivity(intent);
             }
         });
 
@@ -61,6 +63,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnTutorial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Tutorial.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

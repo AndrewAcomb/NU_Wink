@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">KevinProto</string>
+    <string name="safe_information_promise">We don\'t sell your information!</string>
+    <string name="open_setting">Open Settings</string>
+</resources>
