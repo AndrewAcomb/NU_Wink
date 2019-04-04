@@ -43,4 +43,39 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/txt_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="80dp"
+        android:text="0.0" />
+
+    <TextView
+        android:id="@+id/txt_headingdifference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="100dp"
+        android:text="0.0" />
+
+    <TextView
+        android:id="@+id/txt_recognized"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="120dp"
+        android:text="0.0" />
+
+
+
 </android.support.constraint.ConstraintLayout>
