@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">KevinProto</string>
     <string name="safe_information_promise">We don\'t sell your information!</string>
+    <string name="wink_title">W\;nk</string>
+    <string name="onboarding_message">Your Campus at a Glance</string>
     <string name="open_setting">Open Settings</string>
+    <string name="current_landmark">Technological Instutute</string>
 </resources>
