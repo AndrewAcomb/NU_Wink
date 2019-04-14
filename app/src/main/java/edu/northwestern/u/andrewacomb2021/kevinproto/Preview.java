@@ -45,8 +45,11 @@ public class Preview extends AppCompatActivity implements SensorEventListener {
 
 
     //For recognition. Input x and y.
-    private double locationlat = 42.0581819;
-    private double locationlon = -87.6742954;
+    //private double locationlat = 42.0577832;
+    //private double locationlon = -87.6758355;
+
+    private double locationlat = 42.057793;
+    private double locationlon = -87.6756865;
 
     private double userlon = 0;
     private double userlat = 0;
@@ -312,7 +315,7 @@ public class Preview extends AppCompatActivity implements SensorEventListener {
 
         if (radbearing < 0) {
 
-            radbearing += 2 * Math.PI;
+            radbearing = 2 * Math.PI - radbearing;
         }
 
 
