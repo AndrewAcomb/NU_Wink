@@ -26,6 +26,16 @@ import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
 
 import com.camerakit.CameraKitView;
+import com.google.android.gms.tasks.Continuation;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApiNotAvailableException;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.functions.FirebaseFunctions;
+import com.google.firebase.functions.HttpsCallableResult;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class Preview extends AppCompatActivity implements SensorEventListener {
@@ -42,24 +52,11 @@ public class Preview extends AppCompatActivity implements SensorEventListener {
 
     //For user heading
     private SensorManager mSensorManager;
-
-
-    //For recognition. Input x and y.
-    //private double locationlat = 42.0577832;
-    //private double locationlon = -87.6758355;
-
-    private double locationlat = 42.057793;
-    private double locationlon = -87.6756865;
+    private FirebaseFunctions mFunctions;
 
     private double userlon = 0;
     private double userlat = 0;
     private double userheadingdeg = 0;
-
-    private boolean recognized = false;
-
-    TextView txt_recognized, txt_headingdifference, txt_distance;
-    //end recognition
-
 
     private CameraKitView cameraKitView;
 
@@ -84,20 +81,15 @@ public class Preview extends AppCompatActivity implements SensorEventListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_preview);
-        cameraKitView = findViewById(R.id.camera);
 
+        cameraKitView = findViewById(R.id.camera);
         Button btnResult = (Button) findViewById(R.id.btnResult);
         Button btnTutorial = (Button) findViewById(R.id.btnTutorial);
 
-        //Recognition
-
-        //Init view of all of the textviews
-        txt_distance = (TextView) findViewById(R.id.txt_distance);
-        txt_headingdifference = (TextView) findViewById(R.id.txt_headingdifference);
-        txt_recognized = (TextView) findViewById(R.id.txt_recognized);
-
+        FirebaseApp.initializeApp(this);
         // initialize your android device sensor capabilities
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+        mFunctions = FirebaseFunctions.getInstance();
 
 
         //Necesary for location retrieval
@@ -128,10 +120,29 @@ public class Preview extends AppCompatActivity implements SensorEventListener {
             @Override
             public void onClick(View view) {
 
-                if(recognized) {
-                    Intent intent = new Intent(Preview.this, Results.class);
-                    startActivity(intent);
-                }
+
+
+
+                Task buildingtask = recognizeBuilding(userlat, userlon, userheadingdeg);
+
+                buildingtask.addOnSuccessListener(new OnSuccessListener<Map>() {
+                    @Override
+                    public void onSuccess(Map result) {
+
+
+
+                            Intent intent = new Intent(Preview.this, Results.class);
+                            intent.putExtra("name", result.get("name").toString());
+                            startActivity(intent);
+
+
+                    }
+                });
+
+
+                System.out.println("step 3");
+
+
             }
         });
 
@@ -150,7 +161,7 @@ public class Preview extends AppCompatActivity implements SensorEventListener {
     @Override
     protected void onStart() {
         super.onStart();
-        cameraKitView.onStart();
+
     }
 
     @Override
@@ -175,7 +186,6 @@ public class Preview extends AppCompatActivity implements SensorEventListener {
 
     @Override
     protected void onStop() {
-        cameraKitView.onStop();
         super.onStop();
     }
 
@@ -194,19 +204,10 @@ public class Preview extends AppCompatActivity implements SensorEventListener {
         if (event.sensor.getType() == Sensor.TYPE_ORIENTATION) {
 
             // get the angle around the z-axis rotated
-            double degree = Math.round(event.values[0]);
-
-            double locationheadingdeg = radToDegree(calcRadBearing(userlat, userlon, locationlat, locationlon));
             userheadingdeg = event.values[0];
 
-            double difference = userheadingdeg - locationheadingdeg;
 
 
-            // Continuous checking for now, on any heading change.
-            recognized = compareDistance() && compareHeading();
-
-            txt_headingdifference.setText("Heading Difference: " + difference + " Degrees");
-            txt_recognized.setText("Recognized?: " + String.valueOf(recognized));
 
 
         }
@@ -228,12 +229,6 @@ public class Preview extends AppCompatActivity implements SensorEventListener {
                     userlon = location.getLongitude();
                     userlat = location.getLatitude();
 
-                    txt_distance.setText("Distance: " + radToFeet(calcRadDistance(userlat, userlon, locationlat, locationlon)) + "meters");
-
-
-                    // Continuous checking for now, on any heading change.
-                    recognized = compareDistance() && compareHeading();
-                    txt_recognized.setText("Recognized?:" + String.valueOf(recognized));
                 }
 
 
@@ -251,152 +246,39 @@ public class Preview extends AppCompatActivity implements SensorEventListener {
         locationRequest.setFastestInterval(600);
     }
 
-   /* private double calcRadDistance(double lat1, double lon1, double lat2, double lon2){
+    private Task<Map> recognizeBuilding(double lat, double lon, double heading) {
+        // Create the arguments to the callable function.
+        Map<String, Object> data = new HashMap<>();
+        data.put("userlat", lat);
+        data.put("userlon", lon);
+        data.put("userheading", heading);
 
-        double t1 = Math.sin(lat1) * Math.sin(lat2);
-        double t2 = Math.cos(lat1) * Math.cos(lat2);
-        double t3 = Math.cos(lon1 - lon2);
-        double t4 = t2 * t3;
-        double t5 = t1 + t4;
-        double rad_dist = Math.atan(-t5/Math.sqrt(-t5 * t5 +1)) + 2 * Math.atan(1);
-        return (rad_dist);
+        System.out.println("step 1");
 
-    }*/
+        return mFunctions
+                .getHttpsCallable("recognizeBuilding")
+                .call(data)
+                .continueWith(new Continuation<HttpsCallableResult, Map>() {
+                    @Override
+                    public Map then(@NonNull Task<HttpsCallableResult> task) throws Exception {
 
+                        System.out.println("step 2");
 
-    /*
-     * This look weird because it was meant to convert a rad distance to feet. The calcraddistance function for Vincenty's
-     * is misleading and actually converts to meters. You have to change the textview updates to "meters" instead of feet
-     * and vice versa to reflect reality.
-     * */
-    private double radToFeet(double rad) {
-        //return(rad * 3437.74677 * 1.15078 *  5.2800102998e+3);
-        return rad;
-    }
-
-    //Alternate method of calculating bearing towards a location
-
-  /* private double calcRadBearing(double lat1, double lon1, double lat2, double lon2){
-
-        double t1 = Math.sin(lat1) * Math.sin(lat2);
-        double t2 = Math.cos(lat1) * Math.cos(lat2);
-        double t3 = Math.cos(lon1 - lon2);
-        double t4 = t2 * t3;
-        double t5 = t1 + t4;
-        double rad_dist = Math.atan(-t5/Math.sqrt(-t5 * t5 +1)) + 2 * Math.atan(1);
-        t1 = Math.sin(lat2) - Math.sin(lat1) * Math.cos(rad_dist);
-        t2 = Math.cos(lat1) * Math.sin(rad_dist);
-        t3 = t1/t2;
-
-        double rad_bearing;
-
-        if(Math.sin(lon2 - lon1) < 0)
-        {
-            t4 = Math.atan(-t3 /Math.sqrt(-t3 * t3 + 1)) + 2 * Math.atan(1);
-            rad_bearing = t4;
-        }
-        else
-        {
-            t4 = -t3 * t3 + 1;
-            t5 = 2 * Math.PI - (Math.atan(-t3 / Math.sqrt(-t3 * t3 + 1)) + 2 * Math.atan(1));
-            rad_bearing = t5;
-        }
-        return(rad_bearing);
+                        // This continuation runs on either success or failure, but if the task
+                        // has failed then getResult() will throw an Exception which will be
+                        // propagated down.
 
 
-    }*/
+                        Map result = (Map) task.getResult().getData();
+                        System.out.println(result.toString());
+                        System.out.println("step 4");
 
+                        return result;
 
-    private double calcRadBearing(double lat1, double lon1, double lat2, double lon2) {
-
-        double y = Math.sin(lon2 - lon1) * Math.cos(lat2);
-        double x = Math.cos(lat1) * Math.sin(lat2) - Math.sin(lat1) * Math.cos(lat2) * Math.cos(lon2 - lon1);
-        double radbearing = Math.atan2(y, x);
-
-        if (radbearing < 0) {
-
-            radbearing = 2 * Math.PI - radbearing;
-        }
-
-
-        return radbearing;
-
-
-    }
-
-    //Vincenty's formula: Uses loops and more computationally expensive, but more accurate.
-    //https://www.programcreek.com/java-api-examples/index.php?source_dir=ServalMaps-master/src/org/servalproject/maps/utils/GeoUtils.java
-
-    private double calcRadDistance(double lat1, double lon1, double lat2, double lon2) {
-        double a = 6378137, b = 6356752.314245, f = 1 / 298.257223563; // WGS-84 ellipsoid params
-        double L = Math.toRadians(lon2 - lon1);
-        double U1 = Math.atan((1 - f) * Math.tan(Math.toRadians(lat1)));
-        double U2 = Math.atan((1 - f) * Math.tan(Math.toRadians(lat2)));
-        double sinU1 = Math.sin(U1), cosU1 = Math.cos(U1);
-        double sinU2 = Math.sin(U2), cosU2 = Math.cos(U2);
-
-        double sinLambda, cosLambda, sinSigma, cosSigma, sigma, sinAlpha, cosSqAlpha, cos2SigmaM;
-        double lambda = L, lambdaP, iterLimit = 100;
-        do {
-            sinLambda = Math.sin(lambda);
-            cosLambda = Math.cos(lambda);
-            sinSigma = Math.sqrt((cosU2 * sinLambda) * (cosU2 * sinLambda)
-                    + (cosU1 * sinU2 - sinU1 * cosU2 * cosLambda) * (cosU1 * sinU2 - sinU1 * cosU2 * cosLambda));
-            if (sinSigma == 0)
-                return 0; // co-incident points
-            cosSigma = sinU1 * sinU2 + cosU1 * cosU2 * cosLambda;
-            sigma = Math.atan2(sinSigma, cosSigma);
-            sinAlpha = cosU1 * cosU2 * sinLambda / sinSigma;
-            cosSqAlpha = 1 - sinAlpha * sinAlpha;
-            cos2SigmaM = cosSigma - 2 * sinU1 * sinU2 / cosSqAlpha;
-            if (Double.isNaN(cos2SigmaM))
-                cos2SigmaM = 0; // equatorial line: cosSqAlpha=0 (§6)
-            double C = f / 16 * cosSqAlpha * (4 + f * (4 - 3 * cosSqAlpha));
-            lambdaP = lambda;
-            lambda = L + (1 - C) * f * sinAlpha
-                    * (sigma + C * sinSigma * (cos2SigmaM + C * cosSigma * (-1 + 2 * cos2SigmaM * cos2SigmaM)));
-        } while (Math.abs(lambda - lambdaP) > 1e-12 && --iterLimit > 0);
-
-        if (iterLimit == 0)
-            return Double.NaN; // formula failed to converge
-
-        double uSq = cosSqAlpha * (a * a - b * b) / (b * b);
-        double A = 1 + uSq / 16384 * (4096 + uSq * (-768 + uSq * (320 - 175 * uSq)));
-        double B = uSq / 1024 * (256 + uSq * (-128 + uSq * (74 - 47 * uSq)));
-        double deltaSigma = B
-                * sinSigma
-                * (cos2SigmaM + B
-                / 4
-                * (cosSigma * (-1 + 2 * cos2SigmaM * cos2SigmaM) - B / 6 * cos2SigmaM
-                * (-3 + 4 * sinSigma * sinSigma) * (-3 + 4 * cos2SigmaM * cos2SigmaM)));
-        double dist = b * A * (sigma - deltaSigma);
-
-        return dist;
+                    }
+                });
     }
 
 
-    private double radToDegree(double rad) {
-
-        return rad * (180 / Math.PI);
-
-    }
-
-
-    private boolean compareHeading() {
-        double maxheadingdiffdeg = 60;
-        double locationheadingdeg = radToDegree(calcRadBearing(userlat, userlon, locationlat, locationlon));
-        double differencedeg = userheadingdeg - locationheadingdeg;
-
-        return Math.abs(differencedeg) <= maxheadingdiffdeg;
-
-    }
-
-    private boolean compareDistance() {
-        double maxdistance = 100;
-        double feet = radToFeet(calcRadDistance(userlat, userlon, locationlat, locationlon));
-
-        return feet < maxdistance;
-
-    }
 
 }

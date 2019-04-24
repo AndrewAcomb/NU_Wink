@@ -33,7 +33,7 @@
 
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/txt_name"
         android:layout_width="404dp"
         android:layout_height="115dp"
         android:layout_marginStart="8dp"

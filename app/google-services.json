@@ -8,6 +8,43 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:967202554290:android:a37e24de2731325f",
+        "android_client_info": {
+          "package_name": "com.example.fbtest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "967202554290-384fssrlnaru64vbn3v2c2bc4h82vbaq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fbtest",
+            "certificate_hash": "499213b6ffa2d7a011b04a090529a99a8a0c2bcb"
+          }
+        },
+        {
+          "client_id": "967202554290-thgl2sul197ef2eq40dsjd6clr706k2b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj_hJHnThHuDic_t0hWDgcsavKx9Fwtds"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "967202554290-thgl2sul197ef2eq40dsjd6clr706k2b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:967202554290:android:42cfe7799e09db25",
         "android_client_info": {
           "package_name": "edu.northwestern.u.andrewacomb2021.kevinproto"
@@ -23,6 +60,14 @@
           }
         },
         {
+          "client_id": "967202554290-5rmo7s85qo2pueo1uqgp64db60i76al2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.northwestern.u.andrewacomb2021.kevinproto",
+            "certificate_hash": "499213b6ffa2d7a011b04a090529a99a8a0c2bcb"
+          }
+        },
+        {
           "client_id": "967202554290-thgl2sul197ef2eq40dsjd6clr706k2b.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -33,20 +78,13 @@
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "967202554290-utq6blrioddstonb4i77gsu8j9ubm9ga.apps.googleusercontent.com",
+              "client_id": "967202554290-thgl2sul197ef2eq40dsjd6clr706k2b.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
-        },
-        "ads_service": {
-          "status": 2
         }
       }
     }

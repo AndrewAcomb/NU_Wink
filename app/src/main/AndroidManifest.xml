@@ -17,7 +17,7 @@
         <activity android:name=".Tutorial" />
         <activity android:name=".Preview" />
         <activity android:name=".Warning" />
-        <activity android:name=".Recognition" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
