@@ -133,6 +133,8 @@ public class Preview extends AppCompatActivity implements SensorEventListener {
 
                             Intent intent = new Intent(Preview.this, Results.class);
                             intent.putExtra("name", result.get("name").toString());
+                            intent.putExtra("desc", result.get("desc").toString());
+                            intent.putExtra("lookupid", result.get("lookupid").toString());
                             startActivity(intent);
 
 
