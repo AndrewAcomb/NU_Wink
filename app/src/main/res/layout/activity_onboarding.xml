@@ -8,64 +8,85 @@
 
     <Button
         android:id="@+id/btnTut"
-        android:layout_width="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="133dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="148dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="148dp"
-        android:layout_marginBottom="74dp"
+        android:layout_marginBottom="84dp"
+        android:background="#663398"
         android:text="Get Started"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="416dp"
-        android:layout_height="411dp"
-        android:layout_marginTop="38dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:srcCompat="@drawable/purple" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.984" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="400dp"
-        android:layout_height="138dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="8dp"
-        android:fontFamily="@font/roboto"
-        android:gravity="center"
-        android:text="@string/onboarding_message"
-        android:textColor="#FFFFFF"
-        android:textColorLink="@android:color/background_light"
-        android:textSize="60sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView14" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="400dp"
         android:layout_height="206dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="400dp"
         android:fontFamily="@font/roboto"
         android:gravity="center"
         android:text="@string/wink_title"
         android:textColor="#663398"
         android:textColorLink="@android:color/background_light"
-        android:textSize="150sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView14"
+        android:textSize="130sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.305" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="180dp"
+        android:fontFamily="cursive"
+        android:text="Your Campus at a Glance"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.594" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="263dp"
+        android:layout_height="179dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.518"
+        app:srcCompat="@drawable/nice" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="86dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/face1" />
 
 
 </android.support.constraint.ConstraintLayout>
