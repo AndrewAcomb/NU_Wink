@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:autoSizeTextType="uniform"
     tools:context=".Results">
 
     <ImageView
@@ -55,8 +56,9 @@
         android:textColor="@android:color/black"
         android:textColorLink="@android:color/background_light"
         android:textSize="16sp"
-        app:autoSizeMaxTextSize="64dp"
-        app:autoSizeMinTextSize="8dp"
+        android:autoSizeMaxTextSize="64sp"
+        android:autoSizeMinTextSize="4sp"
+        android:scrollbars = "vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageViewLoc"
         app:layout_constraintHorizontal_bias="0.482"

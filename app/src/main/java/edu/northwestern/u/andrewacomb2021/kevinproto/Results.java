@@ -9,6 +9,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -41,6 +42,8 @@ public class Results extends AppCompatActivity {
 
         txt_name.setText(name);
         txt_desc.setText(desc);
+
+        txt_desc.setMovementMethod(new ScrollingMovementMethod());
 
 
 
