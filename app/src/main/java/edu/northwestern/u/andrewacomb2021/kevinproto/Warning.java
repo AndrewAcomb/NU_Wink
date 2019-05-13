@@ -1,6 +1,7 @@
 package edu.northwestern.u.andrewacomb2021.kevinproto;
 
 import android.content.Intent;
+import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,8 +19,8 @@ public class Warning extends AppCompatActivity {
     }
     public void openSettings() {
 
-        Intent start_settings = new Intent(android.provider.Settings.ACTION_SETTINGS);
-        startActivity(start_settings);
+
+        startActivity(new Intent(Settings.ACTION_APPLICATION_SETTINGS));
 
     }
 
