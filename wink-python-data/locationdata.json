@@ -1,0 +1,813 @@
+{
+  "Buildings" : [ {
+    "desc" : "(1962) Originally the home of the American Academy of Pediatrics, the two-story colonial-style building was purchased by Northwestern in 1984 for use by Admission staff.",
+    "id" : 1,
+    "image" : "",
+    "lat" : 42.0491174,
+    "lon" : -87.6759464,
+    "lookupid" : "70",
+    "name" : "1801 Hinman Ave",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.049%2C-87.675%2C17&lookupid=70"
+  }, {
+    "desc" : "",
+    "id" : 2,
+    "image" : "",
+    "lat" : 42.0495785,
+    "lon" : -87.6780466,
+    "lookupid" : "202",
+    "name" : "1808 Chicago Ave (SOCIOL)",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.05%2C-87.678%2C17&lookupid=202"
+  }, {
+    "desc" : "",
+    "id" : 3,
+    "image" : "",
+    "lat" : 42.0495756,
+    "lon" : -87.6780088,
+    "lookupid" : "650",
+    "name" : "1809 Chicago (Hardy House)",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.05%2C-87.677%2C17&lookupid=650"
+  }, {
+    "desc" : "",
+    "id" : 4,
+    "image" : "",
+    "lat" : 42.0496147,
+    "lon" : -87.6760988,
+    "lookupid" : "71",
+    "name" : "1810 Hinman Ave (ANTHRO)",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.049%2C-87.677%2C17&lookupid=71"
+  }, {
+    "desc" : "",
+    "id" : 5,
+    "image" : "",
+    "lat" : 42.0501012,
+    "lon" : -87.6781381,
+    "lookupid" : "43",
+    "name" : "1812 Chicago Ave (SOCIOL)",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.05%2C-87.678%2C17&lookupid=43"
+  }, {
+    "desc" : "",
+    "id" : 6,
+    "image" : "",
+    "lat" : 42.0496163,
+    "lon" : -87.676098,
+    "lookupid" : "205",
+    "name" : "1812 Hinman Ave",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.05%2C-87.677%2C17&lookupid=205"
+  }, {
+    "desc" : "",
+    "id" : 7,
+    "image" : "",
+    "lat" : 42.0493843,
+    "lon" : -87.6757547,
+    "lookupid" : "72",
+    "name" : "1813 Hinman Ave (ULP)",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.049%2C-87.676%2C17&lookupid=72"
+  }, {
+    "desc" : "",
+    "id" : 8,
+    "image" : "",
+    "lat" : 42.0496722,
+    "lon" : -87.6779614,
+    "lookupid" : "44",
+    "name" : "1815 Chicago Ave (COMM_ST)",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.05%2C-87.677%2C17&lookupid=44"
+  }, {
+    "desc" : "",
+    "id" : 9,
+    "image" : "",
+    "lat" : 42.0491994,
+    "lon" : -87.6762616,
+    "lookupid" : "68",
+    "name" : "1819 Hinman Ave",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.05%2C-87.676%2C17&lookupid=68"
+  }, {
+    "desc" : "",
+    "id" : 10,
+    "image" : "",
+    "lat" : 42.0507322,
+    "lon" : -87.677709,
+    "lookupid" : "180",
+    "name" : "1834 Chicago Ave",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.051%2C-87.678%2C17&lookupid=180"
+  }, {
+    "desc" : "",
+    "id" : 11,
+    "image" : "",
+    "lat" : 42.0521503,
+    "lon" : -87.6772589,
+    "lookupid" : "121",
+    "name" : "1902 Sheridan Rd (Buffett CICS)",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.052%2C-87.678%2C17&lookupid=121"
+  }, {
+    "desc" : "",
+    "id" : 12,
+    "image" : "",
+    "lat" : 42.053386,
+    "lon" : -87.677518,
+    "lookupid" : "158",
+    "name" : "1936 Sheridan Rd",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.053%2C-87.678%2C17&lookupid=158"
+  }, {
+    "desc" : "",
+    "id" : 13,
+    "image" : "",
+    "lat" : 42.0544003,
+    "lon" : -87.6772131,
+    "lookupid" : "160",
+    "name" : "2006 Sheridan Rd",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.054%2C-87.678%2C17&lookupid=160"
+  }, {
+    "desc" : "",
+    "id" : 14,
+    "image" : "",
+    "lat" : 42.0544092,
+    "lon" : -87.677213,
+    "lookupid" : "160",
+    "name" : "2010 Sheridan Rd (INTL_ST)",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.054%2C-87.678%2C17&lookupid=160"
+  }, {
+    "desc" : "",
+    "id" : 15,
+    "image" : "",
+    "lat" : 42.0544227,
+    "lon" : -87.6772127,
+    "lookupid" : "162",
+    "name" : "2016 Sheridan Rd (LING)",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.054%2C-87.678%2C17&lookupid=162"
+  }, {
+    "desc" : "",
+    "id" : 17,
+    "image" : "",
+    "lat" : 42.0570147,
+    "lon" : -87.6778646,
+    "lookupid" : "193",
+    "name" : "2122 Sheridan Rd",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.057%2C-87.678%2C17&lookupid=193"
+  }, {
+    "desc" : "",
+    "id" : 19,
+    "image" : "",
+    "lat" : 42.0492452,
+    "lon" : -87.6772872,
+    "lookupid" : "48",
+    "name" : "515 Clark (ENVR_SCI)",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.049%2C-87.677%2C17&lookupid=48"
+  }, {
+    "desc" : "",
+    "id" : 20,
+    "image" : "",
+    "lat" : 42.0495022,
+    "lon" : -87.6775847,
+    "lookupid" : "49",
+    "name" : "555 Clark St",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.05%2C-87.677%2C17&lookupid=49"
+  }, {
+    "desc" : "",
+    "id" : 21,
+    "image" : "",
+    "lat" : 42.0580641,
+    "lon" : -87.6781764,
+    "lookupid" : "94",
+    "name" : "616 Noyes St (ISP)",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.058%2C-87.678%2C17&lookupid=94"
+  }, {
+    "desc" : "",
+    "id" : 22,
+    "image" : "",
+    "lat" : 42.055366,
+    "lon" : -87.67817,
+    "lookupid" : "292",
+    "name" : "617 Library Pl (IPR)",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.055%2C-87.678%2C17&lookupid=292"
+  }, {
+    "desc" : "",
+    "id" : 23,
+    "image" : "",
+    "lat" : 42.055905,
+    "lon" : -87.678198,
+    "lookupid" : "66",
+    "name" : "618 Garrett Pl (CIC)",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.056%2C-87.678%2C17&lookupid=66"
+  }, {
+    "desc" : "",
+    "id" : 24,
+    "image" : "",
+    "lat" : 42.052162,
+    "lon" : -87.678405,
+    "lookupid" : "300",
+    "name" : "619 Emerson Rd",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.052%2C-87.678%2C17&lookupid=300"
+  }, {
+    "desc" : "",
+    "id" : 25,
+    "image" : "",
+    "lat" : 42.054996,
+    "lon" : -87.6779449,
+    "lookupid" : "74",
+    "name" : "620 Library Pl (AFST)",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.055%2C-87.678%2C17&lookupid=74"
+  }, {
+    "desc" : "",
+    "id" : 26,
+    "image" : "",
+    "lat" : 42.057609,
+    "lon" : -87.678392,
+    "lookupid" : "206",
+    "name" : "625 Haven",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.058%2C-87.678%2C17&lookupid=206"
+  }, {
+    "desc" : "",
+    "id" : 27,
+    "image" : "",
+    "lat" : 42.0596908,
+    "lon" : -87.6785277,
+    "lookupid" : "53",
+    "name" : "627 Dartmouth Pl",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.06%2C-87.679%2C17&lookupid=53"
+  }, {
+    "desc" : "",
+    "id" : 28,
+    "image" : "",
+    "lat" : 42.06083,
+    "lon" : -87.678574,
+    "lookupid" : "203",
+    "name" : "629 Colfax St",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.061%2C-87.679%2C17&lookupid=203"
+  }, {
+    "desc" : "",
+    "id" : 29,
+    "image" : "",
+    "lat" : 42.0611133,
+    "lon" : -87.6792203,
+    "lookupid" : "651",
+    "name" : "640 Lincoln St",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.061%2C-87.679%2C17&lookupid=651"
+  }, {
+    "desc" : "",
+    "id" : 30,
+    "image" : "",
+    "lat" : 41.893799,
+    "lon" : -87.623793,
+    "lookupid" : "11",
+    "name" : "645 N Michigan Ave",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=41.894%2C-87.624%2C17&lookupid=11"
+  }, {
+    "desc" : "",
+    "id" : 31,
+    "image" : "",
+    "lat" : 41.894511,
+    "lon" : -87.622345,
+    "lookupid" : "371",
+    "name" : "675 N St Clair",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=41.895%2C-87.623%2C17&lookupid=371"
+  }, {
+    "desc" : "",
+    "id" : 32,
+    "image" : "",
+    "lat" : 41.894579,
+    "lon" : -87.623181,
+    "lookupid" : "28",
+    "name" : "676 N St Clair",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=41.895%2C-87.623%2C17&lookupid=28"
+  }, {
+    "desc" : "",
+    "id" : 33,
+    "image" : "",
+    "lat" : 41.894819,
+    "lon" : -87.616084,
+    "lookupid" : "8",
+    "name" : "680 N Lake Shore Drive",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=41.895%2C-87.617%2C17&lookupid=8"
+  }, {
+    "desc" : "Abbott Hall was dedicated in 1940 as a dormitory for students, staff, and faculty of the professional schools on the Chicago campus. Built at a cost of $1.75 million to house more than 800 residents, the 20-story building was then believed to be the tallest structure in the world used exclusively as a college dormitory. It contained restaurants, a library, shops, exercising facilities, a roof garden, and a bowling alley.",
+    "id" : 34,
+    "image" : "",
+    "lat" : 41.89528,
+    "lon" : -87.6167,
+    "lookupid" : "9",
+    "name" : "Abbott Hall",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=41.895%2C-87.617%2C17&lookupid=9"
+  }, {
+    "desc" : "The Alice S. Millar Chapel and Religious Center (1962) was the gift of Foster G. McGaw, a University trustee, and his wife, Mary. Its 720-seat chapel was named in honor of Mr. McGaw's mother, Alice S. Millar McGaw. Designed by Jensen and Halstead of Chicago, it houses a 100-rank Aeolian Skinner organ and is distinguished by its magnificent stained-glass windows and a 151-foot spire.",
+    "id" : 35,
+    "image" : "",
+    "lat" : 42.050472,
+    "lon" : -87.677078,
+    "lookupid" : "118",
+    "name" : "Alice S Millar Chapel",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.05%2C-87.677%2C17&lookupid=118"
+  }, {
+    "desc" : "The James L. Allen Center (1979) is an executive education center that features 150 sleeping rooms, classrooms, dining rooms, and lounges. Designed by Vickrey, Ovresat, and Awsumb, it is named in honor of alumnus and Northwestern trustee James L. Allen (class of 1929).",
+    "id" : 36,
+    "image" : "",
+    "lat" : 42.0564431,
+    "lon" : -87.673108,
+    "lookupid" : "89",
+    "name" : "Allen Center",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.056%2C-87.673%2C17&lookupid=89"
+  }, {
+    "desc" : "Allison Hall was opened in 1960 as a residence for freshman women. From 1976 to 1981 the fourth floor of Allison held Allison Residential College (ARC), an early component of the residential college system, with a focus on women's studies. In 1981 ARC moved to Hobart House and became the Women's Residential College. In 1985 Allison Hall began serving as a coeducational residence hall. Designed and built by Holabird, Root, and Burgee, Allison Hall was built at a cost of $2 million. It is named in honor of Ruth Jones Allison, who bequeathed a gift to Northwestern of $1 million upon her death in 1957.",
+    "id" : 37,
+    "image" : "",
+    "lat" : 42.050541,
+    "lon" : -87.678423,
+    "lookupid" : "41",
+    "name" : "Allison Res Community",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.05%2C-87.678%2C17&lookupid=41"
+  }, {
+    "desc" : "The Donald Jacobs Center, named in 2001 for the longtime dean of the Kellogg School of Management, consists of Arthur Andersen Hall and Leverone Hall. Both were built in 1972 as the home of Kellogg, the School of Education and Social Policy, and the economics department. In 2001 a 75,000-square-foot, six-story addition designed by DeStefano and Partners was added to the northeast of Andersen Hall.",
+    "id" : 38,
+    "image" : "",
+    "lat" : 42.054045,
+    "lon" : -87.6763988,
+    "lookupid" : "127",
+    "name" : "Andersen Hall",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.054%2C-87.676%2C17&lookupid=127"
+  }, {
+    "desc" : "Walter Annenberg Hall (1994) is home to the School of Education and Social Policy. Named in honor of publisher, broadcaster, diplomat, and philanthropist Walter Annenberg, the building was designed by Booth Hansen Associates. Clad in limestone and precast concrete panels, its exterior features were planned as a transition from the Gothic design of some adjacent buildings to the modern design of others. It houses classrooms equipped with the latest audiovisual and computer technologies.",
+    "id" : 39,
+    "image" : "",
+    "lat" : 42.0560662,
+    "lon" : -87.6745112,
+    "lookupid" : "86",
+    "name" : "Annenberg Hall",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.056%2C-87.674%2C17&lookupid=86"
+  }, {
+    "desc" : "Annie May Swift Hall (1895) was designed by Charles R. Ayers in an eclectic mixture of Venetian Gothic Revival and Romanesque styles. The building was named in honor of the daughter of Gustavus F. Swift, the meatpacking tycoon; she was a Northwestern student when she died in 1889 from typhoid fever. The building originally included offices, recitation rooms, a library, a gymnasium, and an auditorium for what was then known as the School of Oratory.",
+    "id" : 40,
+    "image" : "",
+    "lat" : 42.052342,
+    "lon" : -87.6750474,
+    "lookupid" : "122",
+    "name" : "Annie May Swift Hall",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.052%2C-87.675%2C17&lookupid=122"
+  }, {
+    "desc" : "Thomas G. Ayers Residential College of Commerce and Industry (ACCI) was dedicated in the fall of 1995. The building houses 170 students, most of them in double rooms. ACCI was built through gifts from General Dynamics Corporation and other companies and friends in honor of Thomas G. Ayers. Mr. Ayers became a member of Northwestern's Board of Trustees in 1966 and served as president from 1975 to 1986. The College of Commerce and Industry had its roots in the mid-1970s. Then it was known as the Programmatic College of Commerce and Industry, a nonresidential college created through the efforts of various fraternity and sorority members.",
+    "id" : 41,
+    "image" : "",
+    "lat" : 42.060416,
+    "lon" : -87.675129,
+    "lookupid" : "144",
+    "name" : "Ayers Res College",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.06%2C-87.675%2C17&lookupid=144"
+  }, {
+    "desc" : "The Mary and Leigh Block Museum of Art (1980, 2000) was named in honor of distinguished Chicago art collectors Mary and Leigh B. Block. The museum's permanent collection consists of almost 4,000 works of art - prints, drawings, photographs, sculptures, and mixed-media works - dating from the 13th century to the present. The museum, originally designed by Loebl, Schlossman, and Hackl, is adjoined by an outdoor sculpture garden established in 1989. A 13,000-square-foot expansion designed by Dirk Lohan (2000) significantly increased the capacity of the museum.",
+    "id" : 44,
+    "image" : "",
+    "lat" : 42.0523923,
+    "lon" : -87.6727367,
+    "lookupid" : "106",
+    "name" : "Block Museum",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.052%2C-87.673%2C17&lookupid=106"
+  }, {
+    "desc" : "",
+    "id" : 47,
+    "image" : "",
+    "lat" : 42.0536445,
+    "lon" : -87.6777222,
+    "lookupid" : "65",
+    "name" : "Chambers Hall",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.054%2C-87.678%2C14&lookupid=65"
+  }, {
+    "desc" : "East Fairchild is the home of the Communications Residential College. This residential unit was built in the early 1980s. It was built as one of two Sherman Fairchild Residential Colleges. A $2 million gift from the Sherman Fairchild Foundation helped provide equipment and finance other expenses for the residential colleges. Sherman Fairchild was a pioneer in photography, aviation, and sound engineering. He founded Fairchild Camera and Instrument Corporation and Fairchild Engine and Airplane Corporation.",
+    "id" : 48,
+    "image" : "",
+    "lat" : 42.050849,
+    "lon" : -87.675035,
+    "lookupid" : "115",
+    "name" : "Communications Res College",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.051%2C-87.675%2C17&lookupid=115"
+  }, {
+    "desc" : "In 2001, the materials and life sciences building was named William A. and Gayle Cook Hall in honor of a $10 million gift from the Cooks to support initiatives in the life sciences.",
+    "id" : 50,
+    "image" : "",
+    "lat" : 42.057785,
+    "lon" : -87.674154,
+    "lookupid" : "90",
+    "name" : "Cook Hall",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.058%2C-87.674%2C17&lookupid=90"
+  }, {
+    "desc" : "",
+    "id" : 51,
+    "image" : "",
+    "lat" : 42.0547145,
+    "lon" : -87.6749376,
+    "lookupid" : "128",
+    "name" : "Cresap Laboratory",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.055%2C-87.675%2C17&lookupid=128"
+  }, {
+    "desc" : "",
+    "id" : 52,
+    "image" : "",
+    "lat" : 42.0513866,
+    "lon" : -87.6753649,
+    "lookupid" : "634",
+    "name" : "Crowe Hall",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.051%2C-87.675%2C17&lookupid=634"
+  }, {
+    "desc" : "Dearborn Observatory (1889) is equipped with one of the few remaining refracting telescopes still in use, and it remains an important teaching tool in Northwestern's astronomy program. Designed by Cobb and Frost, the Richardsonian Romanesque building was the gift of James B. Hobbs, a Northwestern trustee from 1883 to 1914. The building features rough-cut limestone walls, a broad entrance arch, a slate roof, and eyebrow dormers. In 1939 the 2,000-ton stone building was moved 100 yards to the south in order to make room for the construction of the Technological Institute. The Dearborn Observatory is currently open for public viewing every Friday night from 9 pm - 11 pm (summer hours). Reservations are required. For more information please call (847) 491-7650.",
+    "id" : 54,
+    "image" : "",
+    "lat" : 42.0566553,
+    "lon" : -87.6750743,
+    "lookupid" : "131",
+    "name" : "Dearborn Observatory",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.057%2C-87.675%2C17&lookupid=131"
+  }, {
+    "desc" : "Elder Hall opened in the fall of 1959 as a residence for 395 men and now is a co-ed residence hall for freshmen. Designed by the firm of Holabird, Root, and Burgee and built at a cost of $1.25 million, the building has an exterior of face brick and Lannon limestone. A dining hall is located on the garden level. Elder Hall was financed in part by a $500,000 gift from J. H. Elder of Midland, Texas. A telegraph operator and railroad agent in the early part of the century, Mr. Elder later became a car dealership owner and a Texas oilman. The enrollment of his grandchildren at Northwestern in the late 1950's coincided with his gift toward the construction of the hall.",
+    "id" : 57,
+    "image" : "",
+    "lat" : 42.060917,
+    "lon" : -87.677809,
+    "lookupid" : "153",
+    "name" : "Elder Hall",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.061%2C-87.678%2C17&lookupid=153"
+  }, {
+    "desc" : "",
+    "id" : 58,
+    "image" : "",
+    "lat" : 42.0544357,
+    "lon" : -87.6780389,
+    "lookupid" : "195",
+    "name" : "Family Institute",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.055%2C-87.678%2C17&lookupid=195"
+  }, {
+    "desc" : "Fisk Hall (1899) initially housed Northwestern's preparatory school, which closed in 1917. The building was named for the school's principal, Herbert F. Fisk, at the request of donor William Deering. Daniel H. Burnham, prominent Chicago architect, planner, and Evanston resident, designed the Romanesque Revival building with its elaborately laid brickwork, terra-cotta and stone trimmings, and red tile roof. Today Fisk Hall is the home of the Medill School of Journalism and named for Joseph Medill, an early editor and publisher of the Chicago Tribune.",
+    "id" : 60,
+    "image" : "",
+    "lat" : 42.0506766,
+    "lon" : -87.6741502,
+    "lookupid" : "113",
+    "name" : "Fisk Hall",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.051%2C-87.674%2C14&lookupid=113"
+  }, {
+    "desc" : "The Ford Motor Company Engineering Design Center (2005) is a 63,000-square-foot, state-of-the-art facility with classrooms, shops, design studios, meeting areas, and team-centered work rooms.",
+    "id" : 61,
+    "image" : "",
+    "lat" : 42.0569238,
+    "lon" : -87.6765436,
+    "lookupid" : "214",
+    "name" : "Ford Engineering and Design Center",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.057%2C-87.677%2C14&lookupid=214"
+  }, {
+    "desc" : "Designed by Skidmore, Owings and Merrill, the Frances Searle Building (1972) provides space for the School of Communication's administrative offices as well as for research, education, and health services in communicative disorders. The building is named in honor of the wife of former trustee John G. Searle.",
+    "id" : 62,
+    "image" : "",
+    "lat" : 42.0586351,
+    "lon" : -87.6737228,
+    "lookupid" : "92",
+    "name" : "Frances Searle",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.059%2C-87.674%2C14&lookupid=92"
+  }, {
+    "desc" : "",
+    "id" : 63,
+    "image" : "",
+    "lat" : 41.896486,
+    "lon" : -87.619963,
+    "lookupid" : "1",
+    "name" : "Galter Health Sciences Library",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=41.896%2C-87.619%2C16&lookupid=1"
+  }, {
+    "desc" : "",
+    "id" : 64,
+    "image" : "",
+    "lat" : 42.0560686,
+    "lon" : -87.6755502,
+    "lookupid" : "191",
+    "name" : "Garrett-Evangelical Seminary",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.056%2C-87.675%2C16&lookupid=191"
+  }, {
+    "desc" : "Rebecca Crown Center (1968) features a broad elevated plaza with a 100-foot-tall clock tower surrounded by three buildings containing Northwestern's central administration offices. Designed by Walter Netsch of Skidmore, Owings & Merrill, the facility occupies 2.7 acres. Its limestone and reinforced concrete walls are accented by limestone slabs that act as sun visors for the tall, narrow windows. The building was a gift of Robert, Henry, and Lester Crown in honor of their mother.",
+    "id" : 67,
+    "image" : "",
+    "lat" : 42.050386,
+    "lon" : -87.679566,
+    "lookupid" : "47",
+    "name" : "Hardin Hall - Rebecca Crown",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.051%2C-87.68%2C17&lookupid=47"
+  }, {
+    "desc" : "Harris Hall (1915) was built as a home for the social sciences. Designed by Charles Coolidge, the building features colossal Ionic columns and decorative applied pilasters at the top story. Today the three-story limestone structure is used by the history department. It was named for Norman Wait Harris, a prominent Chicago banker, philanthropist, and trustee and benefactor of Northwestern University.",
+    "id" : 68,
+    "image" : "",
+    "lat" : 42.0512831,
+    "lon" : -87.6762908,
+    "lookupid" : "119",
+    "name" : "Harris Hall",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.051%2C-87.676%2C17&lookupid=119"
+  }, {
+    "desc" : "The Dellora A. and Lester J. Norris Aquatics Center and Henry Crown Sports Pavilion (1987) represented a major step in the University's campaign to improve athletic and recreational facilities on campus. The sports pavilion includes courts for basketball, volleyball, and racquet sports. The aquatics center features an Olympic-size swimming and diving pool. The attached Combe Tennis Center (bldg. #215) was completed in 2002.",
+    "id" : 70,
+    "image" : "",
+    "lat" : 42.0594411,
+    "lon" : -87.6727806,
+    "lookupid" : "93",
+    "name" : "Henry Crown Sports Pavilion",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.06%2C-87.673%2C17&lookupid=93"
+  }, {
+    "desc" : "",
+    "id" : 73,
+    "image" : "",
+    "lat" : 42.0573558,
+    "lon" : -87.6741496,
+    "lookupid" : "88",
+    "name" : "Hogan Hall",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.057%2C-87.674%2C17&lookupid=88"
+  }, {
+    "desc" : "West Fairchild was opened in the fall of 1981 as the home of the International Studies Residential College (ISRC). ISRC was founded to provide a living arrangement that offered a global perspective using language dining tables, the grouping of students with similar cultural interests in living suites, and a general atmosphere encouraging involvement with international affairs. This structure was built in the early 1980s. Constructed at the cost of $2.2 million, West Fairchild houses approximately 107 students in eight-person suites. It was built as one of two Sherman Fairchild Residential Colleges; neighboring East Fairchild is the home of the Communications Residential College. A $2 million gift from the Sherman Fairchild Foundation helped provide equipment and finance other expenses for the residential colleges. Sherman Fairchild was a pioneer in photography, aviation, and sound engineering. He founded Fairchild Camera and Instrument Corporation and Fairchild Engine and Airplane Corporation.",
+    "id" : 75,
+    "image" : "",
+    "lat" : 42.0509963,
+    "lon" : -87.6757985,
+    "lookupid" : "117",
+    "name" : "International Studies Res College",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.051%2C-87.676%2C17&lookupid=117"
+  }, {
+    "desc" : "The Donald Jacobs Center, named in 2001 for the longtime dean of the Kellogg School of Management, consists of Arthur Andersen Hall and Leverone Hall. Both were built in 1972 as the home of Kellogg, the School of Education and Social Policy, and the economics department. In 2001 a 75,000-square-foot, six-story addition designed by DeStefano and Partners was added to the northeast of Andersen Hall.",
+    "id" : 76,
+    "image" : "",
+    "lat" : 42.0540623,
+    "lon" : -87.6766228,
+    "lookupid" : "126",
+    "name" : "Jacobs Center",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.054%2C-87.676%2C17&lookupid=126"
+  }, {
+    "desc" : "Kresge Centennial Hall (1955) was built to commemorate Northwestern's 100th anniversary and named for the Kresge Foundation (which gave $500,000 of the $2.4 million cost of the building). Designed by Holabird, Root & Burgee, it today houses the programs in comparative literary studies, art theory and practice, art history, and foreign languages. A four-story addition designed by DeStefano and Partners (2002) was built on the south side of Kresge Hall to provide additional faculty office space. See Crowe Hall, #634.",
+    "id" : 77,
+    "image" : "",
+    "lat" : 42.0516769,
+    "lon" : -87.6750968,
+    "lookupid" : "116",
+    "name" : "Kresge Centennial Hall",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.052%2C-87.675%2C17&lookupid=116"
+  }, {
+    "desc" : "The Donald Jacobs Center, named in 2001 for the longtime dean of the Kellogg School of Management, consists of Arthur Andersen Hall and Leverone Hall. Both were built in 1972 as the home of Kellogg, the School of Education and Social Policy, and the economics department. In 2001 a 75,000-square-foot, six-story addition designed by DeStefano and Partners was added to the northeast of Andersen Hall.",
+    "id" : 78,
+    "image" : "",
+    "lat" : 42.0537599,
+    "lon" : -87.6760697,
+    "lookupid" : "126",
+    "name" : "Leverone Hall",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.054%2C-87.676%2C17&lookupid=126"
+  }, {
+    "desc" : "",
+    "id" : 79,
+    "image" : "",
+    "lat" : 41.896593,
+    "lon" : -87.618084,
+    "lookupid" : "3",
+    "name" : "Levy Mayer Hall",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=41.897%2C-87.618%2C17&lookupid=3"
+  }, {
+    "desc" : "Initially known as Locy Laboratory, Emergency Hall, and later Fisk Hall Annex, it was named for William Albert Locy, professor of zoology from 1895 to 1916.",
+    "id" : 80,
+    "image" : "",
+    "lat" : 42.0510134,
+    "lon" : -87.673832,
+    "lookupid" : "114",
+    "name" : "Locy Hall",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.051%2C-87.674%2C17&lookupid=114"
+  }, {
+    "desc" : "John J. Louis Hall (1991) contains two soundstages for film and television production, a professional electronic newsroom, computer workstations, and sophisticated video and audio editing suites used by students in the Medill School of Journalism and the School of Communication. The building is named in honor of John J. Louis, a University trustee.",
+    "id" : 81,
+    "image" : "",
+    "lat" : 42.0519889,
+    "lon" : -87.6729263,
+    "lookupid" : "107",
+    "name" : "Louis Hall",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.052%2C-87.673%2C17&lookupid=107"
+  }, {
+    "desc" : "Lunt Hall (1894) served as Northwestern's library until Deering Library was built in 1933. Designed by William Augustus Otis, the Italian Renaissance'style building was funded largely by a gift from Orrington Lunt, a prominent Chicago businessman and one of Northwestern's founders. While little of the building's original splendor has survived remodeling efforts, the main entrance foyer and the woodwork on the ceiling of the first-floor library offer a glimpse of the craftsmanship involved in its construction. Lunt Hall served as Northwestern's administration building from 1933 to 1942. During World War II the Naval Training School for radio operators occupied the building. Today Lunt Hall is the third-oldest building on campus and houses the mathematics department.",
+    "id" : 83,
+    "image" : "",
+    "lat" : 42.0547974,
+    "lon" : -87.6763192,
+    "lookupid" : "130",
+    "name" : "Lunt Hall",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.055%2C-87.676%2C17&lookupid=130"
+  }, {
+    "desc" : "",
+    "id" : 84,
+    "image" : "",
+    "lat" : 41.895477,
+    "lon" : -87.619795,
+    "lookupid" : "33",
+    "name" : "Lurie Research Center",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=41.895%2C-87.62%2C17&lookupid=33"
+  }, {
+    "desc" : "Designed by James Gamble Rogers, Lutkin Memorial Hall (1941) is named in honor of Peter Christian Lutkin, dean of the School of Music from 1883 to 1931. (A portrait of Lutkin hangs outside the auditorium.) The simplified Gothic structure was made possible by thousands of small gifts that accumulated over a period of 30 years. The auditorium seats 286 and features a stage paneled in carved oak.",
+    "id" : 85,
+    "image" : "",
+    "lat" : 42.0510673,
+    "lon" : -87.6801759,
+    "lookupid" : "179",
+    "name" : "Lutkin Hall",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.051%2C-87.68%2C17&lookupid=179"
+  }, {
+    "desc" : "The McCormick Foundation Center (2002) houses state-of-the-art broadcast, multimedia, and new media facilities. The four-story, 47,000-square-foot structure was designed by Einhorn, Yaffee, Prescott.",
+    "id" : 87,
+    "image" : "",
+    "lat" : 42.0513688,
+    "lon" : -87.6742258,
+    "lookupid" : "211",
+    "name" : "McCormick Tribune",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.051%2C-87.674%2C17&lookupid=211"
+  }, {
+    "desc" : "",
+    "id" : 92,
+    "image" : "",
+    "lat" : 41.896176,
+    "lon" : -87.619653,
+    "lookupid" : "18",
+    "name" : "Morton Medical Rsc Bldg",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=41.896%2C-87.62%2C17&lookupid=18"
+  }, {
+    "desc" : "Mudd Hall ( formerly Seeley G. Mudd Science Library, 1977) was designed by Walter Netsch of Skidmore, Owings & Merrill. The three-story, reinforced-concrete library is connected by pedestrian walkway to the Technological Institute. It holds the University's collection of books, publications, and other materials pertaining to engineering and science.",
+    "id" : 93,
+    "image" : "",
+    "lat" : 42.0581052,
+    "lon" : -87.6744124,
+    "lookupid" : "91",
+    "name" : "Mudd Library",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.058%2C-87.674%2C17&lookupid=91"
+  }, {
+    "desc" : "The former Music Administration Building (1874), the second-oldest building on campus, was designed by Gurdon P. Randall for the Evanston College for Ladies. Originally called the Woman's College Building, the Second Empire style building was later renamed Willard Hall in honor of Frances Willard, who was president of the Evanston College for Ladies and the first dean of women at Northwestern. When a new women's residence hall was built and named Willard Hall in 1938, the School of Music began using the building until 2015.",
+    "id" : 94,
+    "image" : "",
+    "lat" : 42.0505822,
+    "lon" : -87.6805191,
+    "lookupid" : "55",
+    "name" : "Music Administration Building",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.051%2C-87.681%2C17&lookupid=55"
+  }, {
+    "desc" : "Norris University Center (1972) has five levels, two of which are underground. Designed by Edward Dart of Loebl, Schlossman, Dart & Hackl, the 160,000-square-foot structure contains the 350-seat McCormick Auditorium, meeting rooms for student organizations, a bookstore, and recreational and dining areas. The center was named for Northwestern trustee and alumnus Lester Norris Jr.",
+    "id" : 96,
+    "image" : "",
+    "lat" : 42.0533327,
+    "lon" : -87.6727446,
+    "lookupid" : "110",
+    "name" : "Norris Center",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.053%2C-87.673%2C17&lookupid=110"
+  }, {
+    "desc" : "The Arthur and Gladys Pancoe-NorthShore University Health System Life Sciences Pavilion (2003) includes laboratory, office, and teaching space for researchers in the fields of biology and the life sciences. The four-story, 171,000-square-foot facility was designed by Zimmer, Gunsul, Frasca for advanced biomedical research integrating basic science discoveries with clinical investigations.",
+    "id" : 98,
+    "image" : "",
+    "lat" : 42.0572012,
+    "lon" : -87.6735413,
+    "lookupid" : "212",
+    "name" : "Pancoe Life Sciences",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.057%2C-87.674%2C17&lookupid=212"
+  }, {
+    "desc" : "",
+    "id" : 99,
+    "image" : "",
+    "lat" : 42.050067,
+    "lon" : -87.6772496,
+    "lookupid" : "182",
+    "name" : "Parkes Hall",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.05%2C-87.677%2C17&lookupid=182"
+  }, {
+    "desc" : "The 1,003-seat Pick-Staiger Concert Hall (1975) hosts major orchestral, band, and choral performances. Construction was made possible by gifts from Albert Pick Jr. and Charles G. Staiger. The hall was dedicated in honor of Corinne Frada Pick, Pick's wife, and in memory of Pauline Pick Staiger, his sister and Staiger's late wife. Designed by Edward Dart of Loebl, Schlossman, Dart & Hackl, the building is executed primarily in precast concrete and glass. The auditorium, with its sound-reflecting system of 30 plastic dishes, is known for its excellent acoustics.",
+    "id" : 100,
+    "image" : "",
+    "lat" : 42.052654,
+    "lon" : -87.672215,
+    "lookupid" : "108",
+    "name" : "Pick-Staiger",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.053%2C-87.672%2C17&lookupid=108"
+  }, {
+    "desc" : "A gift of the Joseph and Helen Regenstein Foundation of Chicago, the Regenstein Hall of Music (1977) provides practice facilities for the School of Music. Designed by Walter A. Netsch of Skidmore, Owings & Merrill, it houses a 200-seat master-class lecture hall, an instrumental ensemble rehearsal hall, practice rooms, and teaching studios.",
+    "id" : 103,
+    "image" : "",
+    "lat" : 42.052161,
+    "lon" : -87.671392,
+    "lookupid" : "105",
+    "name" : "Regenstein Hall of Music",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.052%2C-87.671%2C17&lookupid=105"
+  }, {
+    "desc" : "In March 2017, the Rehabilitation Institute of Chicago became the Shirley Ryan AbilityLab. The new space was designed to facilitate the practice of translational medicine, a model for medical care in which research is applied directly during patient care.",
+    "id" : 104,
+    "image" : "",
+    "lat" : 41.895434,
+    "lon" : -87.618336,
+    "lookupid" : "24",
+    "name" : "Rehab Inst of Chicago",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=41.895%2C-87.618%2C17&lookupid=24"
+  }, {
+    "desc" : "",
+    "id" : 106,
+    "image" : "",
+    "lat" : 41.896246,
+    "lon" : -87.617373,
+    "lookupid" : "10",
+    "name" : "Rubloff Building",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=41.896%2C-87.617%2C17&lookupid=10"
+  }, {
+    "desc" : "Patrick G. and Shirley W. Ryan Hall provides research and office space for scientists working on nanotechnology, the rapidly evolving field in which new materials and even machines are constructed at the molecular level. The four-story, 84,000-square-foot building was designed by Zimmer, Gunsul, Frasca.",
+    "id" : 107,
+    "image" : "",
+    "lat" : 42.0568405,
+    "lon" : -87.6744776,
+    "lookupid" : "213",
+    "name" : "Ryan Hall",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.057%2C-87.675%2C17&lookupid=213"
+  }, {
+    "desc" : "Scott Hall (1940), a modified Gothic building designed by James Gamble Rogers, served as the student union for 30 years until Norris University Center was built. It was named for Walter Dill Scott, Northwestern's president from 1920 to 1939. Today Scott Hall houses offices for the Division of Student Affairs and the political science department.",
+    "id" : 109,
+    "image" : "",
+    "lat" : 42.0515519,
+    "lon" : -87.6775975,
+    "lookupid" : "165",
+    "name" : "Scott Hall",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.052%2C-87.678%2C17&lookupid=165"
+  }, {
+    "desc" : "",
+    "id" : 110,
+    "image" : "",
+    "lat" : 41.896088,
+    "lon" : -87.619355,
+    "lookupid" : "19",
+    "name" : "Searle Medical Research Building",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=41.896%2C-87.619%2C17&lookupid=19"
+  }, {
+    "desc" : "The Benjamin W. Slivka Residence Hall (2002) is the home of the Residential College of Science and Engineering. The 140-bed, 60,000-square-foot building has apartment-style suites and a discovery room where students can work on science and technology projects. Slivka includes \\u201cLisa's Cafe,\\u201d a coffeehouse. The $15.1 million residence hall and cafe are named for trustee Benjamin W. Slivka (McC '82, G '85) and Lisa Wissner-Slivka (WCAS '85), and were made possible by a $4.6 million gift from the Wissner-Slivka Foundation.",
+    "id" : 112,
+    "image" : "",
+    "lat" : 42.060467,
+    "lon" : -87.675723,
+    "lookupid" : "410",
+    "name" : "Slivka Res College",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.061%2C-87.676%2C17&lookupid=410"
+  }, {
+    "desc" : "Swift Hall (1909) was a gift of Mrs. Gustavus F. Swift and her son Edward F. Swift. The building, which shows the influence of the Prairie School of Architecture, was designed by George W. Maher as the home of the College of Engineering. The five-story Bedford limestone building received an addition in 1945 for training facilities ' including a rifle range ' for the Navy College Training Program and was renamed the Naval Science Building. Today the building is again known as Swift Hall and houses the psychology department.",
+    "id" : 116,
+    "image" : "",
+    "lat" : 42.0549797,
+    "lon" : -87.6749489,
+    "lookupid" : "129",
+    "name" : "Swift Hall",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.055%2C-87.675%2C17&lookupid=129"
+  }, {
+    "desc" : "",
+    "id" : 117,
+    "image" : "",
+    "lat" : 41.8964482,
+    "lon" : -87.6200246,
+    "lookupid" : "17",
+    "name" : "Tarry Building",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=41.896%2C-87.62%2C17&lookupid=17"
+  }, {
+    "desc" : "The Technological Institute (1942) has more than 750,000 square feet of classrooms, offices, laboratories, and research facilities. Designed by Holabird and Root, the facility is one of the largest academic buildings in the world. It houses the Robert R. McCormick School of Engineering and Applied Science as well as the departments of chemistry and of physics and astronomy, which are part of the Weinberg College of Arts and Sciences. The Lannon stone and Bedford limestone building is embellished at the entrance by Edgar Miller's sculptural reliefs on scientific and engineering themes.",
+    "id" : 119,
+    "image" : "",
+    "lat" : 42.057788,
+    "lon" : -87.675893,
+    "lookupid" : "132",
+    "name" : "Technological Institute",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.058%2C-87.676%2C17&lookupid=132"
+  }, {
+    "desc" : "The Virginia Wadsworth Wirtz Center for the Performing Arts, formerly the Theater and Interpretation Center (1980) includes a 450-seat thrust-stage theater, a 350-seat proscenium theater, two smaller 'black box' laboratory theaters, scene shops, and offices for the School of Communication's performance studies and theater departments.",
+    "id" : 120,
+    "image" : "",
+    "lat" : 42.052258,
+    "lon" : -87.673245,
+    "lookupid" : "109",
+    "name" : "Theatre & Interpretation Center",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.052%2C-87.673%2C17&lookupid=109"
+  }, {
+    "desc" : "University Hall (1869) is the oldest building on campus. It was designed by Gurdon P. Randall and took three years to construct. The high-Victorian Gothic building was made with the same type of Joliet limestone that was used in the historic Chicago Water Tower. Now the home of the English department, it originally housed a chapel, a museum, classrooms, a library, and meeting rooms. The clock in University Hall's highest tower, with a movement built by Seth Thomas, was the gift of the class of 1879. The bells were the gift of the class of 1880. In the west entryway of University Hall is a sign bearing the name 'Old College.' This sign hung above the main entrance of Old College, the first building at the University, completed in 1855 and razed in 1973.",
+    "id" : 122,
+    "image" : "",
+    "lat" : 42.0518779,
+    "lon" : -87.6759506,
+    "lookupid" : "120",
+    "name" : "University Hall",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.052%2C-87.676%2C17&lookupid=120"
+  }, {
+    "desc" : "University Library (1970) consists of three distinctive towers of limestone, concrete, and glass that contain more than 5 million volumes. It was designed by Walter Netsch of Skidmore, Owings & Merrill.",
+    "id" : 123,
+    "image" : "",
+    "lat" : 42.0530533,
+    "lon" : -87.674799,
+    "lookupid" : "123",
+    "name" : "University Library",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=42.053%2C-87.674%2C17&lookupid=123"
+  }, {
+    "desc" : "",
+    "id" : 125,
+    "image" : "",
+    "lat" : 41.896542,
+    "lon" : -87.619692,
+    "lookupid" : "1",
+    "name" : "Ward Building",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=41.896%2C-87.62%2C17&lookupid=1"
+  }, {
+    "desc" : "",
+    "id" : 127,
+    "image" : "",
+    "lat" : 41.896395,
+    "lon" : -87.618844,
+    "lookupid" : "2",
+    "name" : "Wieboldt Hall",
+    "nu_maps_link" : "http://maps.northwestern.edu/#latlngz=41.896%2C-87.619%2C17&lookupid=2"
+  } ]
+}
