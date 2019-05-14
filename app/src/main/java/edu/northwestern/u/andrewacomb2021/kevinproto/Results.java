@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -58,6 +59,8 @@ public class Results extends AppCompatActivity {
 
         System.out.println(resID);
         img_location.setImageResource(resID);
+
+        txt_name.setGravity(Gravity.CENTER_HORIZONTAL);
 
 
         Button btnReturn = (Button)findViewById(R.id.btnReturn);
